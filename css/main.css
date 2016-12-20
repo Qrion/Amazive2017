@@ -6,9 +6,56 @@
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    height: 100px;
+    height: 280px;
 }
 
+
+/*
+    FONT
+*/
+
+.font-white {
+    color: #fff;
+}
+
+.font-grey {
+    color: #bbb;
+}
+
+/*
+    Link
+*/
+
+.link-grey {
+    color: #696969;
+}
+
+.link-grey:hover {
+    color: #696969;
+}
+
+/*
+    Body
+*/
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(255,255,255,0.8);
+}
+
+/*
+    Body
+*/
+
+#body-homepage {
+    background-image: url("../images/dark-sky.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
 
 
 /* 
@@ -33,11 +80,12 @@
 
 .welcome-wrapper {
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background-color: #181C1F;
     position: relative;
+    background-image: url("../images/dark-sky.jpg");
+    background-size: cover;
 }
-
 
 /*
     About wrapper
@@ -54,9 +102,9 @@
 */
 
 .expertise-wrapper {
-    background-color: #e5e5e5;
+    background-color: #eee;
     width: 100%;
-    padding: 10px;
+    padding: 50px;
 }
 
 .col:not(:first-child),.col:not(:last-child) {
@@ -68,17 +116,17 @@
     height: 350px;
     background-color: red;
     background-color: #fff;
-    border: 1px solid #ccc;
 }
 
 .expertise-image {
     width: 100%; 
     height: 50%; 
     overflow: hidden;
+    background-color: #333;
 }
 
 .expertise-text {
-    padding: 10px;
+    padding: 20px;
 }
 
 /*
@@ -88,16 +136,71 @@
 .footer {
     background-color: #181C1F;
     width: 100%;
-    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .small-footer {
     background-color: #0E1112;
     width: 100%;
-    height: 50px;
+}
+
+.social {
+    color: grey;
+    padding-left: 20px;
 }
 
 
+/* 
+    Expertise Page 
+*/
 
+.expertise-header {
+    width: 100%;
+    background-color: #333;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+
+ul.expertise-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #181C1F;
+    border-radius: 5px;
+}
+
+li.expertise-nav {
+    float: left;
+}
+
+li.expertise-nav a.expertise-nav {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li.expertise-nav a.expertise-nav:hover {
+    background-color: #111;
+}
+
+.expetise-nav-active {
+    background-color: #4CAF50;
+}
+
+/* 
+    About Page 
+*/
+
+.about-person-container {
+    background-color: #ddd;
+    padding: 10px;
+    border: 2px solid #fff;
+}
 
 
